@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Galeria de Fotos</title>
+</head>
+<body>
+    <header>
+        <h1>Galeria de Fotos</h1>
+    </header>
+
+    <!-- Barra de pesquisa para filtrar as fotos -->
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Buscar fotos..." oninput="filterPhotos()">
+        <button onclick="filterPhotos()">🔍</button>
+    </div>
+
+    <!-- Galeria de fotos -->
+    <div class="gallery" id="gallery">
+        <!-- As fotos serão inseridas aqui dinamicamente via JavaScript -->
+    </div>
+
+    <!-- Modal para exibir a imagem expandida -->
+    <div id="modal" class="modal">
+        <span id="close-modal" class="close">&times;</span>
+        <img id="modal-img" class="modal-content" src="">
+        <div id="modal-caption"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Galeria de Fotos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
